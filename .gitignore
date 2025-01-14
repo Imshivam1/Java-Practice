@@ -7,7 +7,7 @@ _cacache/
 .npx/
 _prebuilds/
 
-# Python files and temporary files
+# Python and temporary files
 *.pyc
 __pycache__/
 *.csv
