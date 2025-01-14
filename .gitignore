@@ -1,0 +1,27 @@
+# Ignore all logs
+_logs/
+*.log
+
+# Ignore cache directories
+_cacache/
+.npx/
+_prebuilds/
+
+# Ignore Python files and temporary files
+*.pyc
+__pycache__/
+*.csv
+*.pem
+
+# Node.js-specific ignores
+node_modules/
+sentry-cli/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Exclude the env directory
+env/
+
+# Ignore package-lock.json if not needed
+package-lock.json
