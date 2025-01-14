@@ -8,7 +8,7 @@ class Demo {
 
     public static void main(String[] args) { // Main method
         Demo d = new Demo(); // Create Demo object
-        d.a = 5;             // Assign values to variables
+        d.a = 6;             // Assign values to variables
         d.b = 10;
         d.show();            // Call the show method
     }
