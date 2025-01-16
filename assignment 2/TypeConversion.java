@@ -7,12 +7,12 @@ Explicit Conversion: Manual type conversion using type casting. It happens when 
 public class TypeConversion {
     public static void main(String[] args) {
         // Implicit conversion
-        float floatValue = 10; // int to float
-        System.out.println("Implicit Conversion: floatValue = " + floatValue);
+        float a = 10; // int to float
+        System.out.println("Implicit Conversion: floatValue = " + a);
 
         // Explicit conversion
-        double doubleValue = 10.75;
-        int intValue = (int) doubleValue; // double to int
-        System.out.println("Explicit Conversion: intValue = " + intValue);
+        double b = 10.75;
+        int c = (int) b; // double to int
+        System.out.println("Explicit Conversion: intValue = " + c);
     }
 }
