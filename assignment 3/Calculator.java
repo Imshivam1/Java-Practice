@@ -19,23 +19,16 @@ public class Calculator {
 
         // Switch to perform operations
         switch (operator) {
-            case '+':
-                System.out.println("Result: " + (num1 + num2));
-                break;
-            case '-':
-                System.out.println("Result: " + (num1 - num2));
-                break;
-            case '*':
-                System.out.println("Result: " + (num1 * num2));
-                break;
-            case '/':
+            case '+' -> System.out.println("Result: " + (num1 + num2));
+            case '-' -> System.out.println("Result: " + (num1 - num2));
+            case '*' -> System.out.println("Result: " + (num1 * num2));
+            case '/' -> {
                 if (num2 != 0)
                     System.out.println("Result: " + (num1 / num2));
                 else
                     System.out.println("Error: Division by zero is not allowed.");
-                break;
-            default:
-                System.out.println("Invalid operator!");
+            }
+            default -> System.out.println("Invalid operator!");
         }
     }
 }
