@@ -24,7 +24,7 @@ public class StudentDetails {
         Student student = new Student();
 
         // Assign values
-        student.name = "John Doe";
+        student.name = "Shivam";
         student.rollNumber = 101;
         student.marks = 85;
 
@@ -35,5 +35,8 @@ public class StudentDetails {
 }
 
 /*RESULT
-V
+Name: Shivam
+Roll Number: 101
+Marks: 85
+Grade: B
 */
