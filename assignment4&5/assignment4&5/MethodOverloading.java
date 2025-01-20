@@ -4,7 +4,7 @@ public class MethodOverloading {
         return a + b;
     }
 
-    // Three-parameter method with same name
+    // Three-parameter method with same name giving calculateSum
     public int calculateSum(int a, int b, int c) {
         return a + b + c;
     }
