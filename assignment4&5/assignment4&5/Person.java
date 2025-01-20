@@ -1,3 +1,8 @@
+/*
+Heap: Where Person objects (person1 and person2) are stored.
+Stack: Where references (person1 and person2) are stored, pointing to objects in the heap.
+*/
+
 public class Person {
     // Instance variables (name, age) are part of the object
     // Objects are stored in the heap
