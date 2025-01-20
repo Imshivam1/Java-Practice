@@ -1,5 +1,5 @@
 public class PalindromeCheck {
-    public boolean isPalindrome(String str) {
+    public boolean isPalindrome(String str) { //boolean return-type is mentioned to give returns in TRUE-FALSE
         String reversed = new StringBuilder(str).reverse().toString();// stores reversed str in reversed String by using reverse to convert
         //and toString() to keep it in String format only
         return str.equalsIgnoreCase(reversed);//compares both str and reversed igonring case sensitive letters
