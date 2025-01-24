@@ -46,6 +46,8 @@ public class BankAccount {
     }
 }
 /*
+Private fields (accountNumber and balance) ensure encapsulation.
+Getters and setters control access to these fields, ensuring validation and secure updates.
 OUTPUT
 Deposited: 2000.0, New Balance: 7000.0
 Withdrawn: 1500.0, New Balance: 5500.0
