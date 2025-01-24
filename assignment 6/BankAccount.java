@@ -43,6 +43,7 @@ public class BankAccount {
         account.deposit(2000);
         account.withdraw(1500);
         account.withdraw(6000); // Insufficient balance
+        System.out.println("Account number:"+ account.getAccountNumber());
     }
 }
 /*
