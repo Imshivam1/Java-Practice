@@ -6,26 +6,30 @@ public class RegexS{
 		
 		Scanner in = new Scanner(System.in);
 		int testCases = Integer.parseInt(in.nextLine());
-		while(testCases>0){
-			String line = in.nextLine();
-			
-          	//Write your code here
-            String regex = "<([^>]+)>(.*?)</\\1>"; // Capture valid HTML-like tags
-        Pattern pattern = Pattern.compile(regex);
+		while (testCases > 0) {
+            String line = in.nextLine();
+
+            // Regex to match well-formed tags
+            String regex = "<([^<>]+)>([^<>]*)</\\1>";
+            Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(line);
             boolean found = false;
 
             while (matcher.find()) {
-                System.out.println(matcher.group(2)); // Extract content between matching tags
-                found = true;
+                String content = matcher.group(2).trim(); // Extract text inside matching tags
+                if (!content.isEmpty()) {
+                    System.out.println(content);
+                    found = true;
+                }
             }
 
             if (!found) {
-                System.out.println("None"); // Print "None" if no valid content found
+                System.out.println("None");
             }
-			
-			testCases--;
-		}
+
+            testCases--;
+        }
+        in.close();
 	}
 }
 
