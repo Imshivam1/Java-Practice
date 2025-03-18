@@ -11,7 +11,7 @@ public class Hashmap1 {
             char c = s.charAt(right);
             charCount.put(c, charCount.getOrDefault(c, 0) + 1);
 
-            while (charCount.size() > k) {
+            while (charCount.size() > k) {//charCount keeps the no. of characters
                 char leftChar = s.charAt(left);
                 charCount.put(leftChar, charCount.get(leftChar) - 1);
                 if (charCount.get(leftChar) == 0) {
@@ -24,5 +24,16 @@ public class Hashmap1 {
         }
 
         return maxLength;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt(); // Number of test cases
+
+        while (T-- > 0) {
+            int K = sc.nextInt();// no. of distinct character
+            String S = sc.next();//string
+            System.out.println(getLengthofLongestSubstring(S, K));
+        }
+        sc.close();
     }
 }
