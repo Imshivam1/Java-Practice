@@ -27,14 +27,14 @@ public class Hashmap1 {
         return maxLength;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt(); // Number of test cases
-
-        while (T-- > 0) {
-            int K = sc.nextInt();// no. of distinct character
-            String S = sc.next();//string
-            System.out.println(getLengthofLongestSubstring(S, K));
-        }
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            int T = sc.nextInt(); // Number of test cases
+            
+            while (T-- > 0) {
+                int K = sc.nextInt();// no. of distinct character
+                String S = sc.next();//string
+                System.out.println(getLengthofLongestSubstring(S, K));
+            }
+        } // Number of test cases
     }
 }
