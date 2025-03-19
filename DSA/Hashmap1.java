@@ -14,6 +14,7 @@ public class Hashmap1 {
             while (charCount.size() > k) {//charCount keeps the no. of characters
                 char leftChar = s.charAt(left);
                 charCount.put(leftChar, charCount.get(leftChar) - 1);
+                
                 if (charCount.get(leftChar) == 0) {
                     charCount.remove(leftChar);
                 }
