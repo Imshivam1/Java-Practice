@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Hashmap1 {
     public static int getLengthofLongestSubstring(String s, int k) {
-        if (s == null || s.length() == 0 || k == 0) return 0;
+        if (s == null || s.length() == 0 || k == 0) return 0;//base case
 
         Map<Character, Integer> charCount = new HashMap<>(); // Corrected 'Hashmap' to 'HashMap'
         int left = 0, maxLength = 0;
