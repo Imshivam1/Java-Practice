@@ -1,4 +1,39 @@
 
+/*
+ Problem statement
+You have been given a circular path. There are N petrol pumps on this path that are numbered from 0 to N - 1 (Both inclusive). Each petrol pump has two values associated with it:
+1)The amount of petrol that is available at this particular petrol pump.
+2)The distance to reach the next petrol pump.
+You are on a truck having an empty tank of infinite capacity. You can start the tour from any of the petrol pumps. Your task is to calculate the first petrol pump from where the truck will be able to complete the full circle or determine if it is impossible to do so.
+You may assume that the truck will stop at every petrol pump and it will add the petrol from that pump to its tank. The truck will move one kilometre for each litre of petrol consumed.
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints:
+1 <= N <= 5*10^5
+1 <= Amount of petrol on each pump <= 10^9
+1 <= Distance to next pump <= 10^9
+
+Where N is the total number of petrol pumps on the circular path.
+
+Time Limit: 1sec
+Sample Input 1 :
+3
+1 5
+10 3
+3 4
+Sample Output 1:
+1
+Explanation for Sample 1:
+If we start from the petrol pump at index 0, we will not be able to travel to index one as petrol available for travelling is less than the distance.
+
+If we start at index 1, we can complete our journey (1 -> 2 -> 0 -> 1) easily. 
+Sample Input 2 :
+3
+1 10
+10 20
+3 10
+Sample Output 2 :
+-1
+ */
 public class Truckfuel {
     public static int firstCircularTour(int[] petrol, int[] distance, int n) {
         // Edge case: If n is invalid
